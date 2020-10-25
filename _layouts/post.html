@@ -7,6 +7,9 @@ layout: compress
 
 {% include header.html %}
 
+<link href="{{site.url}}{{site.baseurl}}/assets/css/kudosplease-min.css" type="text/css" rel="stylesheet"></link>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/kudosplease-min.js"></script>
+
 <body data-theme="{{ site.mode }}" class="notransition">
 
   <script>
@@ -63,6 +66,7 @@ layout: compress
           </div>
           {% endif %}
         </header>
+        
 
         <div class="page-content" itemprop="articleBody">
           {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=1 h_max=4 %}
@@ -72,6 +76,7 @@ layout: compress
           </p>
           {% endif %}
         </div>
+        
       </article>
     
       {% if page.comments %}
